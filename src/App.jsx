@@ -5,6 +5,7 @@ import Home from './components/Home/Home';
 import About from './components/About/About';
 import ProjectGallery from './components/ProjectGallery/ProjectGallery';
 import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import * as bootstrap from 'bootstrap'
 import './app.css'
@@ -12,6 +13,7 @@ import './app.css'
 
 function App() {
   return (
+    <>
     <header>
     <Headline>
     </Headline>
@@ -27,6 +29,10 @@ function App() {
       </Routes>
     </Router>
     </header>
+    {/* should I shift this all into a header jsx? */}
+    <Footer>
+    </Footer>
+    </>
   );
 }
 

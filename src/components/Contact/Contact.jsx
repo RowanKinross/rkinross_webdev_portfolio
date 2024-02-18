@@ -11,10 +11,7 @@ function Contact() {
 
 export default Contact;
 
+// [ ] Contact:
+// [ ] Must have contact information
+// [ ] Have a contact form for handling events
 
-// [ ] Links to your:
-// [ ] GitHub Profile
-// [ ] LinkedIn Page
-// [ ] Email Address
-// [ ] Phone Number - (optional)
-// [ ] PDF version of your resume

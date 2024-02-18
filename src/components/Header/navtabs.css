@@ -1,0 +1,10 @@
+.nav-item {
+  margin: 2px 2px 0 2px;
+  padding-left: 6px;
+  background-color: transparent;
+}
+
+.nav-tabs, .nav-link {
+  background-color: transparent;
+  color: rgb(247, 181, 0) !important;
+}

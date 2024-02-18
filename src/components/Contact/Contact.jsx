@@ -1,9 +1,7 @@
-import { Link, Route, Routes } from 'react-router-dom';
-
-function Contact(props) {
+function Contact() {
   return (
     <>
-      <h1>Contact Page</h1>
+      <h2>Contact Page</h2>
       <p>
         ~contact me content
       </p>
@@ -12,3 +10,11 @@ function Contact(props) {
 }
 
 export default Contact;
+
+
+// [ ] Links to your:
+// [ ] GitHub Profile
+// [ ] LinkedIn Page
+// [ ] Email Address
+// [ ] Phone Number - (optional)
+// [ ] PDF version of your resume

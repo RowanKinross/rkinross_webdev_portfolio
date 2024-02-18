@@ -1,7 +1,7 @@
 function ProjectGallery() {
   return (
     <>
-      <h1 className="text-center">hello</h1>
+      <h2 className="text-center">hello</h2>
       <p>
         ~ project gallery content 
       </p>

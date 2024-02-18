@@ -1,9 +1,10 @@
 import { NavLink } from 'react-router-dom';
+import './navtabs.css'
 
 function NavTabs() {
   return (
     <ul className="nav nav-tabs">
-      
+
       <li className="nav-item">
         <NavLink
           to="/"
@@ -34,7 +35,7 @@ function NavTabs() {
             isActive ? 'nav-link active' : 'nav-link'
           }
         >
-          Project Gallery
+          Projects
         </NavLink>
       </li>
 

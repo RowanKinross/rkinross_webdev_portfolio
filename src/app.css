@@ -3,17 +3,20 @@
   --pale: rgb(250, 245, 228);
   --lightGreen: #2c786c;
   --dark: #004445;
+  --darkGrey: rgb(33, 46, 46);
+  --darkTransparent: rgb(33, 46, 46, 0.5);
 }
 
 * {
-  background-color: var(--dark);
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: var(--darkGrey);
   padding: 0;
   margin: 0;
-  color: black;
+  color: var(--pale);
 }
 
 header {
-  color: var(--orange);
+  color: var(--pale);
   background-image: url(./images/header.jpg);
   background-size: cover;
   padding-top: 3%;
@@ -21,15 +24,20 @@ header {
 }
 
 h1 {
-  color: var(--dark);
+  color: var(--pale);
+  font-weight: 500;
   margin: 10px 40px 100px 40px;
-  padding: 4px;
-  border: solid var(--dark) 1px;
-  background-color: rgb(250, 245, 228, 0.3);
-  border-radius: 5px;
+  padding: 10px;
+  border: solid var(--pale) 3px;
+  background-color: var(--darkTransparent);
+  border-radius: 10px;
 }
 
 h2 {
   margin: 0;
 }
 
+footer {
+  position: fixed;
+  bottom: 0;
+}

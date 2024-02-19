@@ -1,10 +1,23 @@
 .nav-item {
-  margin: 2px 2px 0 2px;
-  padding-left: 6px;
+  margin: 2px 0.5px 0 0.5px;
+  padding-left: 2.5px;
   background-color: transparent;
 }
 
-.nav-tabs, .nav-link {
+.nav-tabs {
   background-color: transparent;
-  color: rgb(247, 181, 0) !important;
+}
+
+
+.nav-link {
+  background-color: var(--darkTransparent) !important;
+  color: var(--pale) !important;
+  border: solid 2px var(--pale) !important;
+  border-bottom: 0 !important;
+}
+
+.nav-item.active, .nav-link.active{
+  color: var(--pale) !important;
+  background-color: var(--darkGrey) !important;
+  border-bottom: 0 !important;
 }

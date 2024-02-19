@@ -2,7 +2,7 @@ function Headline() {
   return (
     <>
     <h1>
-      Rowan Kinross // Web Developer
+      R O W A N | Web-Developer Portfolio
     </h1>
     </>
   )

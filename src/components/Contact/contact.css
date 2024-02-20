@@ -1,0 +1,21 @@
+.contact {
+  padding: 20px;
+}
+
+.form {
+  padding: 5px;
+}
+
+.row {
+  padding: 3px;
+}
+
+input, textArea {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.message {
+  height: 200px;
+} 
+

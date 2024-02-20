@@ -2,7 +2,7 @@ function Headline() {
   return (
     <>
     <h1>
-      R O W A N | Web-Developer Portfolio
+      <span className="rowan"> R O W A N | Web-Developer</span> <span className="portfolio">Portfolio</span>
     </h1>
     </>
   )

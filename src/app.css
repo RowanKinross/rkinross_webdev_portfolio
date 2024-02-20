@@ -19,17 +19,28 @@ header {
   color: var(--pale);
   background-image: url(./images/header.jpg);
   background-size: cover;
-  padding-top: 3%;
+  padding-top: 2px;
+  background-repeat: no-repeat;
   text-align: center;
 }
 
 h1 {
-  color: var(--pale);
+  color: var(--darkGrey);
   font-weight: 500;
   margin: 10px 40px 100px 40px;
   padding: 10px;
+  background-color: transparent;
+  text-align: end;
   border: solid var(--pale) 3px;
   background-color: var(--darkTransparent);
+  border-radius: 10px;
+} 
+
+.portfolio {
+  background-color: transparent;
+}
+.rowan {
+  padding: 0 5px 0 5px;
   border-radius: 10px;
 }
 

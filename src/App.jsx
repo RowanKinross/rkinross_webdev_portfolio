@@ -20,8 +20,6 @@ function App() {
     <Router>
       <NavTabs />
       <Routes>
-        {/* Define routes using the Route component to render different page components at different paths */}
-        {/* Define a default route that will render the Home component */}
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="gallery" element={<ProjectGallery />} />
@@ -37,3 +35,7 @@ function App() {
 }
 
 export default App;
+
+
+// re-write and add more comments across my code
+// props

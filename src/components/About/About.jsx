@@ -1,12 +1,10 @@
+import './about.css'
+
 function About() {
   return (
     <div>
       <div className="container text-center">
         <div className='row'>
-          <div className='col-sm-4'>
-            <img/>
-            <img/>
-          </div>
           <div className='col-sm-8 p-5'>
             <div className=''>
               <h2>About Me</h2>
@@ -16,6 +14,12 @@ function About() {
               As technology evolves, I am enthusiastic about adapting and acquiring new skills on the job. I see front-end development not just as a career but as a dynamic avenue for exploration and growth. I am driven by a belief that web development and technology can be powerful tools for positive change, particularly for charitable organisations and social enterprise. My goal is to contribute to a future where technology serves as a catalyst for meaningful progress, and I am eager to make a tangible impact in this realm.
 
               </p>
+            </div>
+          </div>
+          <div className='col-sm-4'>
+            <div className='imgContainer'>
+              <img src="src/images/about_me_images.png"/>
+              <img className="code" src="src/images/about_me_code.png"/>
             </div>
           </div>
         </div>

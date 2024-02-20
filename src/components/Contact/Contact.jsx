@@ -1,5 +1,6 @@
   import { useState } from 'react';
   import './contact.css'
+  import emailjs from '@emailjs/browser';
   
   function Contact() {
     // Setting the component's initial state
@@ -24,20 +25,35 @@
   
     const handleFormSubmit = (e) => {
       e.preventDefault();
+
+      let templateParams = {
+        firstName: formData.firstName,
+        lastName: formData.lastName,
+        email: formData.email,
+        message: formData.message,
+      };
   
       // Alert the user their first and last name, clear `formData.firstName` and `formData.lastName`, clearing the inputs
       if(!formData.firstName || !formData.lastName || !formData.email || !formData.message){
-      alert(`Please fill out all fields`)
+        alert(`Please fill out all fields`)
       } else {
-      alert(`Thank you! Your message has been sent`);
-      setFormData({
-        firstName: '',
-        lastName: '',
-        email: '',
-        message: '',
-      });
+        emailjs.send("service_9kw7gk4","template_0393pm3", templateParams)
+        .then(
+          (response) => {
+          },
+          (error) => {
+            console.log('FAILED...', error);
+          },
+        );
+        setFormData({
+          firstName: '',
+          lastName: '',
+          email: '',
+          message: '',
+        });
+      };
+
       }
-    }
 
 
     return (
@@ -45,7 +61,14 @@
         <p className='m-0'>
           If you'd like to get in touch, please fill out the form below:
         </p>
-        <form className="form container">
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function() {emailjs.init({publicKey: "8BoZbrrTGoqERZRyu"})});
+            ();
+        </script>
+
+
+        <form className="form container" id='form' onSubmit={handleFormSubmit}>
 
           <div className="row">
             <div className="col-sm-12 col-lg-3">
@@ -112,15 +135,19 @@
          </div>
 
           <br/>
-          <button onClick={handleFormSubmit}>Submit</button>
+          <button type="submit" className='btn'>Submit</button>
         </form>
       </div>
+
+
+
     );
   }
   
 export default Contact;
 
 //// [ ] Contact:
-// [ ] Must have contact information
+//// [ ] Must have contact information
 //// [ ] Have a contact form for handling events
+//// need to submit the form and for it to go to my emails?
 

@@ -1,9 +1,9 @@
 :root {
   --orange: rgb(247, 181, 0);
-  --pale: rgb(250, 245, 228);
+  --pale: rgb(247, 181, 0);
   --lightGreen: #2c786c;
   --dark: #004445;
-  --darkGrey: rgb(33, 46, 46);
+  --darkGrey: #004445;
   --darkTransparent: rgb(33, 46, 46, 0.5);
 }
 
@@ -18,29 +18,43 @@
 header {
   color: var(--pale);
   background-image: url(./images/header.jpg);
-  background-size: cover;
+  background-size: 100%;
   padding-top: 2px;
   background-repeat: no-repeat;
   text-align: center;
 }
 
 h1 {
+  font-size: medium;
   color: var(--darkGrey);
   font-weight: 500;
-  margin: 10px 40px 100px 40px;
-  padding: 10px;
+  margin: 10px 40px 35px 40px;
+
   background-color: transparent;
-  text-align: end;
-  border: solid var(--pale) 3px;
-  background-color: var(--darkTransparent);
+  text-align: center;
   border-radius: 10px;
 } 
 
-.portfolio {
+.headline {
   background-color: transparent;
+  padding: 10px;
+  border: 3px solid var(--darkGrey);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.portfolio {
+  background-color: var(--darkGrey);
+  padding: 5px;
+  color: var(--pale);
+  border-radius: 10px;
 }
 .rowan {
-  padding: 0 5px 0 5px;
+  color: var(--darkGrey);
+  font-size: x-large;
+  font-weight: bold;
+  padding: 5px;
+  background-color:var(--pale);
   border-radius: 10px;
 }
 

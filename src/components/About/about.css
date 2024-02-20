@@ -1,0 +1,14 @@
+.imgContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.code {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  object-position: 50% 50%;
+  border-radius: 50%;
+  border: 5px solid var(--pale);
+}

@@ -1,50 +1,50 @@
 [
   {
     "id": 1,
-    "title": "Earworm Extractor",
+    "title": "Team Profile Generator",
     "image":
-      "src/images/about_me_code.png",
-    "deployed": "link to deployed app",
-    "github": "github"
+      "src/images/team_profile_gen.png",
+    "deployed": "",
+    "github": "https://github.com/RowanKinross/OOP_Team_Profile_Generator_RK"
   },
   {
     "id": 2,
-    "title": "",
+    "title": "Earworm Extractor",
     "image":
-      "src/images/about_me_code.png",
-    "deployed": "link to deployed app",
-    "github": "github"
+      "src/images/earworm_extractor.png",
+    "deployed": "https://rowankinross.github.io/music_searcher_web_app/",
+    "github": "https://github.com/RowanKinross/music_searcher_web_app"
   },
   {
     "id": 3,
-    "title": "",
+    "title": "ReadMe Generator",
     "image":
-      "src/images/about_me_code.png",
-    "deployed": "link to deployed app",
-    "github": "github"
+      "src/images/readme_gen_demo.png",
+    "deployed": "",
+    "github": "https://github.com/RowanKinross/readMe_generator_rkinross"
   },
   {
     "id": 4,
-    "title": "",
+    "title": "Weather Dashboard",
     "image":
-      "src/images/about_me_code.png",
-    "deployed": "link to deployed app",
-    "github": "github"
+      "src/images/rkinross_weather_dashboard_screencapture.png",
+    "deployed": "https://rowankinross.github.io/rkinross_weather_dashboard/",
+    "github": "https://github.com/RowanKinross/rkinross_weather_dashboard"
   },
   {
     "id": 5,
-    "title": "",
+    "title": "Flight of the Conchords Trivia Quiz",
     "image":
-      "src/images/about_me_code.png",
-    "deployed": "link to deployed app",
-    "github": "github"
+      "src/images/web-API-code-quiz-demo.png",
+    "deployed": "https://rowankinross.github.io/web-APIs-code-quiz/",
+    "github": "https://github.com/RowanKinross/web-APIs-code-quiz"
   },
   {
     "id": 6,
-    "title": "",
+    "title": "Password Generator",
     "image":
-      "src/images/about_me_code.png",
-    "deployed": "link to deployed app",
-    "github": "github"
+      "src/images/password_generator_screencapture.png",
+    "deployed": "https://rowankinross.github.io/password-generator/",
+    "github": "https://github.com/RowanKinross/password-generator"
   }
 ]

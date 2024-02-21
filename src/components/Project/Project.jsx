@@ -1,24 +1,34 @@
 import "./project.css";
 
 function Project({title, image, deployed, github}) {
+
+  function ifDeployed() {
+      if (deployed != "") {
+        return (<a href={deployed} target="_blank"> here </a>)
+      } else {
+        return "n/a"
+      }
+  }
+
+
   return (
     <div className="card">
-      <div className="img-container">
-        <img
+      <div className="content">
+      <div className="img-container projectImageContainer">
+        <img className="projectImage"
           alt={title}
           src={image}
         />
       </div>
-      <div className="content">
         <ul>
           <li>
-            <strong>Title:</strong> {title}
+            <strong>{title}</strong>
           </li>
-          <li>
-            <strong>Deployed Page:</strong> {deployed}
+          <li className="projectLi">
+            Deployed Page: {ifDeployed()}
           </li>
-          <li>
-            <strong>GitHub Repository:</strong> {github}
+          <li className="projectLi">
+            GitHub Repository:<a href={github} target="_blank"> here</a>
           </li>
         </ul>
       </div>
@@ -27,29 +37,3 @@ function Project({title, image, deployed, github}) {
 }
 
 export default Project;
-
-
-
-// [ ] A list of projects (Challenges or Projects). For each project, make sure you have the following:
-// [ ] Project title
-// [ ] Link to the deployed version
-// [ ] Link to the GitHub repository
-// [ ] GIF or screenshot of the deployed application
-
-
-// [ ] Project:
-// [ ] Must be a reusable component that ingests JSON data as a props and renders a single instance for each project.
-  // look at card rendering in past projects
-// [ ] Must utilize router props to properly render the right project based on user selection
-// [ ] Must render the following info:
-// [ ] Project title
-// [ ] Link to the deployed version
-// [ ] Link to the GitHub repository
-// [ ] GIF or screenshot of the deployed application
-
-// 1. team profile generator
-// 2. earworm extractor
-// 3. readme generator
-// 4. weather dashboard
-// 5. flight of the conchords trivia quiz
-// 6. password generator

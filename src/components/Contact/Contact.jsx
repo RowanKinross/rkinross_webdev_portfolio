@@ -153,7 +153,7 @@
          </div>
 
           <br/>
-          <button type="submit" className='btn'>Submit</button>
+          <button type="submit" className='btn submitForm'>Submit</button>
         </form>
       </div>
 

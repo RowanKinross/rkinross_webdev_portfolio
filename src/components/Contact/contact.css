@@ -21,12 +21,12 @@ input, textArea {
   height: 200px;
 } 
 
-button {
+.submitForm {
   padding: 2px 10px 2px 10px;
   background-color: var(--pale) !important;
 }
 
-button:hover {
+.submitForm:hover {
   background-color: transparent !important;
   border: 2px solid var(--pale) !important;
 }

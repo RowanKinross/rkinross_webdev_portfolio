@@ -29,6 +29,7 @@
       let templateParams = {
         firstName: formData.firstName,
         lastName: formData.lastName,
+        company: formData.company,
         email: formData.email,
         message: formData.message,
       };
@@ -48,6 +49,7 @@
         setFormData({
           firstName: '',
           lastName: '',
+          company: '',
           email: '',
           message: '',
         });
@@ -104,6 +106,22 @@
 
          <div className="row">
             <div className="col-sm-12 col-lg-3">
+              <label htmlFor="company">Company/Organisation</label>
+            </div>
+            <div className="col-sm-12 col-lg-9">
+              <input
+                value={formData.company}
+                name="company"
+                id="company"
+                onChange={handleInputChange}
+                type="text"
+                placeholder="Company/Organisation"
+              />
+            </div>
+         </div>
+
+         <div className="row">
+            <div className="col-sm-12 col-lg-3">
               <label htmlFor="email">Email</label>
             </div>
             <div className="col-sm-12 col-lg-9">
@@ -113,7 +131,7 @@
                 id="email"
                 onChange={handleInputChange}
                 type="text"
-                placeholder="email"
+                placeholder="Email"
               />
             </div>
          </div>
@@ -145,9 +163,4 @@
   }
   
 export default Contact;
-
-//// [ ] Contact:
-//// [ ] Must have contact information
-//// [ ] Have a contact form for handling events
-//// need to submit the form and for it to go to my emails?
 

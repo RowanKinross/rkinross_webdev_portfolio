@@ -12,3 +12,8 @@
   border-radius: 50%;
   border: 5px solid var(--pale);
 }
+
+.aboutText {
+  background-color: var(--paleTransparent);
+  border-radius: 30px;
+}

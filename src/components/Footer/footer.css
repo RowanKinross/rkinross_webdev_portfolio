@@ -1,0 +1,15 @@
+footer, footer a, footer h6 {
+  padding-top: 2px;
+  color: var(--pale);
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px 20px 2px 20px;
+  width: 100%;
+  justify-content: space-evenly;
+  border: 2px solid var(--pale);
+  border-radius: 10px;
+  background-color: var(--dark);
+}

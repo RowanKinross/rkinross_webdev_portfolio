@@ -3,7 +3,7 @@ import './home.css'
 
 function Home() {
   return (
-    <div>
+    <div className='home'>
       <div className="container text-center">
         <div className='row'>
           <div className='col-sm-4'>
@@ -12,6 +12,7 @@ function Home() {
           <div className='col-sm-8 p-5 brandStatement'>
             <div className=''>
               <h2>Rowan Kinross </h2>
+              <br></br>
               <p>
                 ~ Junior Front-End Developer, UK | Seeking opportunities in the charity & social enterprise sector
               </p>

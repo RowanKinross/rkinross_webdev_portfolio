@@ -1,17 +1,25 @@
+import "./footer.css"
+
 function Footer() {
   return (
-    <>
+    <div>
     <footer>
-      github likedin etc
+      <a className="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://www.linkedin.com/in/rowan-kinross-512940284/" target="_blank">
+        <h6 className="linkedIn">LinkedIn</h6>
+      </a>
+
+      <a className="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://github.com/RowanKinross" target="_blank">
+        <h6 className="github">GitHub</h6>
+      </a>
+
+      <a className="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href={`mailto:rowan.kinross@outlook.com`} target="_blank">
+        <h6 className="email">rowan.kinross@outlook.com</h6>
+      </a> 
+
+      <a className="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://docs.google.com/document/d/e/2PACX-1vTY6jghsKjPruSPcwaF63o1AbBgT2V_QC9jktcF2oMQV3h06Tj2Yr1eaKDIsrjnWD0czpqzasyaGF0m/pub?embedded=true" target="_blank"> CV</a>
     </footer>
-    </>
+    </div>
   )
 }
 
 export default Footer
-
-// [ ] Links to your:
-// [ ] GitHub Profile
-// [ ] LinkedIn Page
-// [ ] Email Address
-// [ ] PDF version of your resume

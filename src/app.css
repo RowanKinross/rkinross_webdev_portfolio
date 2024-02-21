@@ -1,22 +1,21 @@
 :root {
-  --orange: rgb(247, 181, 0);
-  --pale: rgb(247, 181, 0);
-  --lightGreen: #2c786c;
+  --pale: #f7b500;
+  --paleTransparent: rgb(247, 181, 0, 0.1);
   --dark: #004445;
-  --darkGrey: #004445;
-  --darkTransparent: rgb(33, 46, 46, 0.5);
+  --darkTransparent: rgb(0, 68, 69, 0.3);
 }
 
 * {
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  background-color: var(--darkGrey);
+  /* background-color: var(--darkGrey); */
   padding: 0;
   margin: 0;
   color: var(--pale);
 }
 
+
+
 header {
-  color: var(--pale);
   background-image: url(./images/header.jpg);
   background-size: 100%;
   padding-top: 2px;
@@ -26,7 +25,7 @@ header {
 
 h1 {
   font-size: medium;
-  color: var(--darkGrey);
+  color: var(--dark);
   font-weight: 500;
   margin: 10px 40px 35px 40px;
 
@@ -38,19 +37,17 @@ h1 {
 .headline {
   background-color: transparent;
   padding: 10px;
-  border: 3px solid var(--darkGrey);
+  border: 2px solid var(--pale);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
 }
 .portfolio {
-  background-color: var(--darkGrey);
   padding: 5px;
-  color: var(--pale);
   border-radius: 10px;
 }
 .rowan {
-  color: var(--darkGrey);
+  color: var(--dark);
   font-size: x-large;
   font-weight: bold;
   padding: 5px;
@@ -65,4 +62,15 @@ h2 {
 footer {
   position: fixed;
   bottom: 0;
+}
+
+.about, .portfolio {
+  background-color: var(--dark);
+}
+
+.contact, .home, .projects{
+  background-image: url(./images/background_branch.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: var(--dark);
 }

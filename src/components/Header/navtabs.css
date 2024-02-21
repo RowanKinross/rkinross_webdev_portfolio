@@ -18,6 +18,6 @@
 
 .nav-item.active, .nav-link.active{
   color: var(--pale) !important;
-  background-color: var(--darkGrey) !important;
+  background-color: var(--dark) !important;
   border-bottom: 0 !important;
 }

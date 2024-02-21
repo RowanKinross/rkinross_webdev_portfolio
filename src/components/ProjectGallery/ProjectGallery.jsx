@@ -1,11 +1,11 @@
 function ProjectGallery() {
   return (
-    <>
+    <div className="projects">
       <h2 className="text-center">hello</h2>
       <p>
         ~ project gallery content 
       </p>
-    </>
+    </div>
   );
 }
 

@@ -1,9 +1,14 @@
+import Project from "../Project/Project";
+import projects from "../Project/projects.json"
+
 function ProjectGallery() {
   return (
     <div className="projects">
-      <h2 className="text-center">hello</h2>
-      <p>
-        ~ project gallery content 
+      <h2 className="text-center projectGalleryTitle">Project Gallery</h2>
+      <p className="projectsContainer">
+      {projects.map((item) => (
+        <Project key={item.id} title={item.title} image={item.image} deployed={item.deployed} github={item.github} />
+      ))}
       </p>
     </div>
   );

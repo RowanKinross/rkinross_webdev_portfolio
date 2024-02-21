@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "Earworm Extractor",
+    "image":
+      "src/images/about_me_code.png",
+    "deployed": "link to deployed app",
+    "github": "github"
+  },
+  {
+    "id": 2,
+    "title": "",
+    "image":
+      "src/images/about_me_code.png",
+    "deployed": "link to deployed app",
+    "github": "github"
+  },
+  {
+    "id": 3,
+    "title": "",
+    "image":
+      "src/images/about_me_code.png",
+    "deployed": "link to deployed app",
+    "github": "github"
+  },
+  {
+    "id": 4,
+    "title": "",
+    "image":
+      "src/images/about_me_code.png",
+    "deployed": "link to deployed app",
+    "github": "github"
+  },
+  {
+    "id": 5,
+    "title": "",
+    "image":
+      "src/images/about_me_code.png",
+    "deployed": "link to deployed app",
+    "github": "github"
+  },
+  {
+    "id": 6,
+    "title": "",
+    "image":
+      "src/images/about_me_code.png",
+    "deployed": "link to deployed app",
+    "github": "github"
+  }
+]

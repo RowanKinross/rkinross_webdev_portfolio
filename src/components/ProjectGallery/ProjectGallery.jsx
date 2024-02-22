@@ -11,12 +11,10 @@ function ProjectGallery() {
   const totalItems = projects.length;
 
   const handleClickNext = () => {
-    console.log(currentIndex)
     setCurrentIndex((prevIndex) => (prevIndex + 1));
   };
 
   const handleClickPrev = () => {
-    console.log(currentIndex)
     setCurrentIndex((prevIndex) =>(prevIndex - 1) + totalItems);
   };
 

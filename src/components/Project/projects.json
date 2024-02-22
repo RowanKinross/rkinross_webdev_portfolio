@@ -3,7 +3,7 @@
     "id": 1,
     "title": "Team Profile Generator",
     "image":
-      "rkinross_webdev_portfolio/src/assets/images/team_profile_gen.png",
+      "src/assets/images/team_profile_gen.png",
     "deployed": "",
     "github": "https://github.com/RowanKinross/OOP_Team_Profile_Generator_RK"
   },
@@ -11,7 +11,7 @@
     "id": 2,
     "title": "Earworm Extractor",
     "image":
-      "./src/assets/images/earworm_extractor.png",
+      "src/assets/images/earworm_extractor.png",
     "deployed": "https://rowankinross.github.io/music_searcher_web_app/",
     "github": "https://github.com/RowanKinross/music_searcher_web_app"
   },

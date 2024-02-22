@@ -23,9 +23,11 @@
       });
     };
   
+    // function for when the form has been submitted
     const handleFormSubmit = (e) => {
       e.preventDefault();
 
+      // set parameters from the inputs
       let templateParams = {
         firstName: formData.firstName,
         lastName: formData.lastName,
@@ -34,7 +36,7 @@
         message: formData.message,
       };
   
-      // Alert the user their first and last name, clear `formData.firstName` and `formData.lastName`, clearing the inputs
+      // make sure all fields have been filled in
       if(!formData.firstName || !formData.lastName || !formData.email || !formData.message){
         alert(`Please fill out all fields`)
       } else {
@@ -46,6 +48,7 @@
             console.log('FAILED...', error);
           },
         );
+        // clear input fields
         setFormData({
           firstName: '',
           lastName: '',
@@ -54,10 +57,12 @@
           message: '',
         });
       };
-
       }
 
 
+
+
+    // return the following html
     return (
       <div className='contact'>
         <p className='m-0'>
@@ -68,7 +73,6 @@
             (function() {emailjs.init({publicKey: "8BoZbrrTGoqERZRyu"})});
             ();
         </script>
-
 
         <form className="form container" id='form' onSubmit={handleFormSubmit}>
 
@@ -156,9 +160,6 @@
           <button type="submit" className='btn submitForm'>Submit</button>
         </form>
       </div>
-
-
-
     );
   }
   

@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import Project from "../Project/Project";
 import projects from "../Project/projects.json"
+import "./projectGallery.css"
+
 
 
 function ProjectGallery() {
@@ -14,14 +16,15 @@ function ProjectGallery() {
   };
 
   const handleClickPrev = () => {
-    setCurrentIndex((prevIndex) =>(prevIndex - 1) % totalItems);
+    console.log(currentIndex)
+    setCurrentIndex((prevIndex) =>(prevIndex - 1) + totalItems);
   };
 
   const getIndices = () => {
     const showProjects = [];
     showProjects.push(projects[((currentIndex - 1) + totalItems) % totalItems]);
     showProjects.push(projects[(currentIndex % totalItems)]);
-    showProjects.push(projects[(currentIndex + 1) % totalItems]);
+    showProjects.push(projects[((currentIndex + 1) + totalItems) % totalItems]);
     return showProjects;
   };
 

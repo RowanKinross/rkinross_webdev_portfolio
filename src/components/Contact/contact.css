@@ -2,30 +2,26 @@
   padding: 20px;
 }
 
+/* form styling */
 .form {
   padding: 20px 20px 80px 20px;
   background-color: transparent;
 }
-
 .row {
   padding: 3px;
 }
-
 input, textArea {
   width: 100%;
   border-radius: 5px;
   background-color: transparent;
 }
-
 .message {
   height: 200px;
 } 
-
 .submitForm {
   padding: 2px 10px 2px 10px;
   background-color: var(--pale) !important;
 }
-
 .submitForm:hover {
   background-color: transparent !important;
   border: 2px solid var(--pale) !important;

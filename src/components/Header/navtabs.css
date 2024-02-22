@@ -1,21 +1,23 @@
+/* all the background colours should be transparent unless stated otherwise */
+.nav-tabs, .nav-item {
+  background-color: transparent;
+}
+
+
+/* nav-item applies to all nav tab list items*/
 .nav-item {
   margin: 2px 0.5px 0 0.5px;
   padding-left: 2.5px;
-  background-color: transparent;
-}
-
-.nav-tabs {
-  background-color: transparent;
 }
 
 
+/* styling on the nav links */
 .nav-link {
   background-color: var(--darkTransparent) !important;
   color: var(--pale) !important;
   border: solid 2px var(--pale) !important;
   border-bottom: 0 !important;
 }
-
 .nav-item.active, .nav-link.active{
   color: var(--pale) !important;
   background-color: var(--dark) !important;

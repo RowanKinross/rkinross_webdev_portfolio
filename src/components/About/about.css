@@ -1,8 +1,10 @@
+/* image container div for the decorative images */
 .imgContainer {
   display: flex;
   flex-direction: column;
 }
 
+/* image of code snippet */
 .code {
   display: block;
   margin-left: auto;
@@ -13,6 +15,7 @@
   border: 5px solid var(--pale);
 }
 
+/* main paragraph of text */
 .aboutText {
   background-color: var(--paleTransparent);
   border-radius: 30px;

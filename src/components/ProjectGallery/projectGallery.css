@@ -1,3 +1,4 @@
+/* Styling on the card */
 .card {
   background: var(--paleTransparent) !important;
   border-radius: 2px;
@@ -6,44 +7,47 @@
   text-align: left;
   margin-bottom: 100px;
 }
-
+/* card image */
 .projectImage {
   width: 100%;
   border-radius: 5px;
 }
-
+/* card text */
 .card .content ul {
   list-style-type: none;
 }
-
 .card .content ul li {
   margin-top: 18px;
 }
+.projectLi {
+  font-size: small;
+}
 
+
+/* styling on the project gallery */
 .projectGalleryTitle, .projects {
   padding: 10px;
 }
-
 .carouselContainer {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
+/* making the left and right cards smaller */
 .sideProject {
   width: 70%;
 }
 
-.projectLi {
-  font-size: small;
-}
 
+/* styling on the previous and next arrows */
 .buttonSpan {
   height: 20%;
   top: 450px !important;
   bottom: auto;
 }
 
+
+/* hide left and right project cards at a certain screen size */
 @media only screen and (max-width: 760px) {
   .hide {
     display: none !important;

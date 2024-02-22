@@ -1,5 +1,3 @@
-import "./project.css";
-
 function Project({title, image, deployed, github}) {
 
   function ifDeployed() {

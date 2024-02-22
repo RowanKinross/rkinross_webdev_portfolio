@@ -16,7 +16,7 @@ function Footer() {
         <h6 className="email">rowan.kinross@outlook.com</h6>
       </a> 
 
-      <a className="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://docs.google.com/document/d/e/2PACX-1vTY6jghsKjPruSPcwaF63o1AbBgT2V_QC9jktcF2oMQV3h06Tj2Yr1eaKDIsrjnWD0czpqzasyaGF0m/pub?embedded=true" target="_blank"> CV</a>
+      <a className="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="src/components/CV/Rowan_Kinross_Web_Developer_CV_2023.pdf" target="_blank"> CV</a>
     </footer>
     </div>
   )

@@ -1,3 +1,4 @@
+import about_me_images from '/src/assets/images/about_me_images.png'
 import './about.css'
 
 function About() {
@@ -19,8 +20,8 @@ function About() {
           </div>
           <div className='col-sm-4'>
             <div className='imgContainer'>
-              <img src="rkinross_webdev_portfolio\src\assets\images\about_me_images.png"/>
-              <img className="code" src="rkinross_webdev_portfolio\src\assets\images\about_me_code.png"/>
+              <img src={about_me_images}/>
+              <img className="code" src="/src/assets/images/about_me_code.png"/>
             </div>
           </div>
         </div>

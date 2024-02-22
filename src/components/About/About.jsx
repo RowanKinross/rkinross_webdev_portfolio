@@ -1,5 +1,5 @@
 import AboutMe from '/src/assets/images/about_me_images.png'
-import CodeSnippet from '/src/assets/images/about_me_code.png'
+import CodeSnippet from '/image/about_me_code.png'
 import './about.css'
 
 function About() {

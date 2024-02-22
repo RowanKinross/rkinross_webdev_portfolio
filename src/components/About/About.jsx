@@ -19,8 +19,8 @@ function About() {
           </div>
           <div className='col-sm-4'>
             <div className='imgContainer'>
-              <img src="../src/assets/images/about_me_images.png"/>
-              <img className="code" src="../src/assets/images/about_me_code.png"/>
+              <img src="rkinross_webdev_portfolio\src\assets\images\about_me_images.png"/>
+              <img className="code" src="rkinross_webdev_portfolio\src\assets\images\about_me_code.png"/>
             </div>
           </div>
         </div>

@@ -1,5 +1,5 @@
 import AboutMe from '/src/assets/images/about_me_images.png'
-import CodeSnippet from 'assets/images/about_me_code.png'
+import Code from '/src/assets/images/about_me_code.png'
 import './about.css'
 
 function About() {
@@ -22,7 +22,7 @@ function About() {
           <div className='col-sm-4'>
             <div className='imgContainer'>
               <img src={AboutMe}/>
-              <img className="code" src={CodeSnippet}/>
+              <img className="code" src={Code}/>
             </div>
           </div>
         </div>

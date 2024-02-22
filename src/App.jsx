@@ -27,7 +27,6 @@ function App() {
       </Routes>
     </Router>
     </header>
-    {/* should I shift this all into a header jsx? */}
     <Footer>
     </Footer>
     </>
@@ -35,6 +34,3 @@ function App() {
 }
 
 export default App;
-
-
-// re-write and add more comments across my code

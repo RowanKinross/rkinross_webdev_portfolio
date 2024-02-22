@@ -25,7 +25,6 @@ function ProjectGallery() {
     return showProjects;
   };
 
-  //remove current index + 4%6, +5%6, +6%6 then .map the shallow array
   return (
     <div>
     <div className="projects">

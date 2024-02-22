@@ -1,3 +1,4 @@
+/* setting colour variables used throughout */
 :root {
   --pale: #f7b500;
   --paleTransparent: rgb(247, 181, 0, 0.1);
@@ -5,26 +6,29 @@
   --darkTransparent: rgb(0, 68, 69, 0.3);
 }
 
+
+/* styling on all elements */
 * {
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  /* background-color: var(--darkGrey); */
   padding: 0;
   margin: 0;
   color: var(--pale);
 }
 
+
 body {
   background-color: var(--dark);
 }
 
+
+/* Header (includes react router dom) */
 header {
-  background-image: url(./images/header.jpg);
+  background-image: url(./assets/images/header.jpg);
   background-size: 100%;
   padding-top: 2px;
   background-repeat: no-repeat;
   text-align: center;
 }
-
 h1 {
   font-size: medium;
   color: var(--dark);
@@ -34,7 +38,6 @@ h1 {
   text-align: center;
   border-radius: 10px;
 } 
-
 .headline {
   background-color: transparent;
   padding: 10px;
@@ -56,21 +59,26 @@ h1 {
   border-radius: 10px;
 }
 
+
+
 h2 {
   margin: 0;
 }
 
+
+/* Footer - sticky */
 footer {
   position: fixed;
   bottom: 0;
 }
 
+
+/* Components */
 .about, .portfolio {
   background-color: var(--dark);
 }
-
 .contact, .home, .projects{
-  background-image: url(./images/background_branch.png);
+  background-image: url(./assets/images/background_branch.png);
   background-size: 100%;
   background-repeat: no-repeat;
   background-color: var(--dark);

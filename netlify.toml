@@ -1,0 +1,16 @@
+[build]
+  # Directory with your built files
+  publish = "build"
+
+  # Directory where your source files are located
+  base = "src"
+
+  # Command to build your project
+  command = "npm run build"
+
+[[headers]]
+  # Define the path to the images folder
+  for = "/src/assets/images/*"
+    # Cache images for 1 year (31536000 seconds)
+    [headers.values]
+      Cache-Control = "public, max-age=31536000"

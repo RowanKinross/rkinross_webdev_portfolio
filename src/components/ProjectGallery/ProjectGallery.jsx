@@ -36,7 +36,7 @@ function ProjectGallery() {
               <Project 
               key={project.id} 
               title={project.title} 
-              image={project.image} 
+              image={project.image}
               deployed={project.deployed} 
               github={project.github} 
               />

@@ -38,4 +38,3 @@ export default App;
 
 
 // re-write and add more comments across my code
-// props

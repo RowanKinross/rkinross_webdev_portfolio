@@ -12,7 +12,6 @@ function Project({title, image, deployed, github}) {
 
 
   return (
-    <div className="card">
       <div className="content">
       <div className="img-container projectImageContainer">
         <img className="projectImage"
@@ -32,7 +31,6 @@ function Project({title, image, deployed, github}) {
           </li>
         </ul>
       </div>
-    </div>
   );
 }
 

@@ -33,7 +33,7 @@
   },
   {
     "id": 5,
-    "title": "Flight of the Conchords Trivia Quiz",
+    "title": "Trivia Quiz",
     "image":
       "src/images/web-API-code-quiz-demo.png",
     "deployed": "https://rowankinross.github.io/web-APIs-code-quiz/",

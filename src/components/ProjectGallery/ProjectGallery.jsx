@@ -1,52 +1,59 @@
+import React, { useState } from 'react'
 import Project from "../Project/Project";
 import projects from "../Project/projects.json"
 
-let i = 0;
-
 
 function ProjectGallery() {
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-  function prev() {
-    i = i-1
-    renderProjects()
-  }
+  const totalItems = projects.length;
 
-  function next() {
-    i = i+1
-    ProjectGallery()
-  }
+  const handleClickNext = () => {
+    console.log(currentIndex)
+    setCurrentIndex((prevIndex) => (prevIndex + 1));
+  };
 
+  const handleClickPrev = () => {
+    setCurrentIndex((prevIndex) =>(prevIndex - 1) % totalItems);
+  };
+
+  const getIndices = () => {
+    const showProjects = [];
+    showProjects.push(projects[((currentIndex - 1) + totalItems) % totalItems]);
+    showProjects.push(projects[(currentIndex % totalItems)]);
+    showProjects.push(projects[(currentIndex + 1) % totalItems]);
+    return showProjects;
+  };
+
+  //remove current index + 4%6, +5%6, +6%6 then .map the shallow array
   return (
+    <div>
     <div className="projects">
       <h2 className="text-center projectGalleryTitle">Project Gallery</h2>
-
-      <div id="carouselExampleFade" class="carousel slide carousel-fade">
-        <div class="carousel-inner carouselContainer">
-        <div className="hide">
-          <Project key={projects[i].id} title={projects[i].title} image={projects[i].image} deployed={projects[i].deployed} github={projects[i].github} /> 
+        <div className="carouselContainer">
+          {getIndices().map((project, index) => (
+            <div key={index} className={`card ${index === 1 ? 'centralProject' : 'sideProject hide'}`}>
+              <Project 
+              key={project.id} 
+              title={project.title} 
+              image={project.image} 
+              deployed={project.deployed} 
+              github={project.github} 
+              />
+            </div>
+          ))}
         </div>
-        <div className="show">
-          <Project key={projects[i+1].id} title={projects[i+1].title} image={projects[i+1].image} deployed={projects[i+1].deployed} github={projects[i+1].github} />
-        </div>
-        <div className="hide">
-          <Project key={projects[i+2].id} title={projects[i+2].title} image={projects[i+2].image} deployed={projects[i+2].deployed} github={projects[i+2].github} />
-        </div>
-          <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev" 
-          // onClick={prev()}
-          >
-            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Previous</span>
-          </button>
-          <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next"
-          //  onClick={next()}
-           >
-            <span className="carousel-control-next-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Next</span>
+        <button className="carousel-control-prev buttonSpan" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <div className="carousel-control-prev-icon" aria-hidden="true" onClick={handleClickPrev}></div>
+            <div className="visually-hidden">Previous</div>
         </button>
-      </div>
+        <button className="carousel-control-next buttonSpan" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <div className="carousel-control-next-icon" aria-hidden="true" onClick={handleClickNext}></div>
+            <div className="visually-hidden">Next</div>
+        </button>
       </div>
     </div>
   );
-}
+};
 
 export default ProjectGallery;

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Project from "../Project/Project";
-// import Projects from "../Project/projects.json"
+import Projects from "../Project/projects.json"
 import "./projectGallery.css"
 
 

@@ -1,4 +1,4 @@
-// import Headshot from '/headshot.jpg'
+import Headshot from '/headshot.jpg'
 import './home.css'
 
 function Home() {
@@ -7,7 +7,7 @@ function Home() {
       <div className="container text-center">
         <div className='row'>
           <div className='col-sm-4'>
-            {/* <img src={Headshot} alt="Headshot" className='headshot'/> */}
+            <img src={Headshot} alt="Headshot" className='headshot'/>
           </div>
           <div className='col-sm-8 p-5 brandStatement'>
             <div className=''>

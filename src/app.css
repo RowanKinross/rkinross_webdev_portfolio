@@ -23,7 +23,7 @@ body {
 
 /* Header (includes react router dom) */
 header {
-  /* background-image: url(/header.jpg); */
+  background-image: url(/header.jpg);
   background-size: 100%;
   padding-top: 2px;
   background-repeat: no-repeat;
@@ -78,7 +78,7 @@ footer {
   background-color: var(--dark);
 }
 .contact, .home, .projects{
-  /* background-image: url(/background_branch.png); */
+  background-image: url(/background_branch.png);
   background-size: 100%;
   background-repeat: no-repeat;
   background-color: var(--dark);

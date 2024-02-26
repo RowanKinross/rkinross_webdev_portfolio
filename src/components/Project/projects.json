@@ -3,7 +3,7 @@
     "id": 1,
     "title": "Team Profile Generator",
     "image":
-      "/src/assets/images/team_profile_gen.png",
+      "/team_profile_gen.png",
     "deployed": "",
     "github": "https://github.com/RowanKinross/OOP_Team_Profile_Generator_RK"
   },
@@ -11,7 +11,7 @@
     "id": 2,
     "title": "Earworm Extractor",
     "image":
-      "images/earworm_extractor.png",
+      "/earworm_extractor.png",
     "deployed": "https://rowankinross.github.io/music_searcher_web_app/",
     "github": "https://github.com/RowanKinross/music_searcher_web_app"
   },
@@ -19,7 +19,7 @@
     "id": 3,
     "title": "ReadMe Generator",
     "image":
-      "images/readme_gen_demo.png",
+      "/readme_gen_demo.png",
     "deployed": "",
     "github": "https://github.com/RowanKinross/readMe_generator_rkinross"
   },
@@ -27,7 +27,7 @@
     "id": 4,
     "title": "Weather Dashboard",
     "image":
-      "images/rkinross_weather_dashboard_screencapture.png",
+      "/rkinross_weather_dashboard_screencapture.png",
     "deployed": "https://rowankinross.github.io/rkinross_weather_dashboard/",
     "github": "https://github.com/RowanKinross/rkinross_weather_dashboard"
   },
@@ -35,7 +35,7 @@
     "id": 5,
     "title": "Trivia Quiz",
     "image":
-      "images/web-API-code-quiz-demo.png",
+      "/web-API-code-quiz-demo.png",
     "deployed": "https://rowankinross.github.io/web-APIs-code-quiz/",
     "github": "https://github.com/RowanKinross/web-APIs-code-quiz"
   },
@@ -43,7 +43,7 @@
     "id": 6,
     "title": "Password Generator",
     "image":
-      "images/password_generator_screencapture.png",
+      "/password_generator_screencapture.png",
     "deployed": "https://rowankinross.github.io/password-generator/",
     "github": "https://github.com/RowanKinross/password-generator"
   }

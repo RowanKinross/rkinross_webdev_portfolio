@@ -1,4 +1,4 @@
-import Headshot from '/src/assets/images/headshot.jpg'
+import Headshot from '/headshot.jpg'
 import './home.css'
 
 function Home() {

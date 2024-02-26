@@ -1,4 +1,4 @@
-import CV from './CV/Rowan_Kinross_Web_Developer_CV_2023.pdf'
+import CV from '/Rowan_Kinross_Web_Developer_CV_2023.pdf'
 import "./footer.css"
 
 function Footer() {
